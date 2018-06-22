@@ -12,4 +12,4 @@ var cadena_texto = "Hola que tal";
 var verdadero_o_falso = true;
 var numero_falso = "33";
 
-console.log(Number(numero_falso)+7);
+console.log(typeof cadena_texto);
