@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script type="text/javascript" src="js/EJS.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 20px;
+        }
+
+        .dashed{
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        1. Formulario campos: Nombre, Apellidos y edad
+        2. Botón de enviar el formulario: Eventos submit
+        3. Mostrar datos por pantalla
+        4. Validación de formulario
+    -->
+    <h1>Datos personales</h1>
+
+    <div class="box">
+        <form action="" method="POST" id="formulario" onsubmit="return false;">
+            <label for="nombre">Nombres:</label>
+            <br/>
+            <input type="text" name="nombre" id="nombre" />
+            <br/>
+
+            <label for="apellidos">Apellidos:</label>
+            <br/>
+            <input type="text" name="apellidos" id="apellidos" />
+            <br/>
+
+            <label for="edad">Edad:</label>
+            <br/>
+            <input type="number" name="edad" id="edad" />
+            <br/>
+            <hr/>
+
+            <input type="submit" value="Enviar" id="submit" />
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h3>Información del Usuario</h3>
+        <hr/>
+        <p id="p_nombre">
+            Nombres: <span></span>
+        </p>
+        <p id="p_apellido">
+            Apellidos: <span></span>
+        </p>
+        <p id="p_edad">
+            Edad: <span></span>
+        </p>
+    </div>
+
+</body>
+
+</html>
